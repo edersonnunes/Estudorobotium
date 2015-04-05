@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Estudorobotium</string>
+
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in_short">action_sign_in_short</string>
+    <string name="action_sign_in">Autenticar</string>
+    <string name="action_settings">Settings</string>
+    <string name="erro_senha_incorreta">A senha está incorreta</string>
+    <string name="title_activity_usuario_autenticado">UsuarioAutenticadoActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="error_invalid_password">A senha está incorreta</string>
+    <string name="error_field_required">O campo deve ser preenchido</string>
+    <string name="error_invalid_email">e-mail inválido</string>
+</resources>
