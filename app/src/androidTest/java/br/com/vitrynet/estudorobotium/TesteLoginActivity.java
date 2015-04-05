@@ -18,7 +18,8 @@ public class TesteLoginActivity
         super(LoginActivity.class);
     }
 
-    protected void setUP() throws Exception {
+    @Override
+    protected void setUp() throws Exception {
         super.setUp();
 
         activity = getActivity();
@@ -32,6 +33,7 @@ public class TesteLoginActivity
 
             solo.enterText(editEmail, "zezinho@testlandia.com");
             solo.clickOnButton("Autenticar");
+            solo.takeScreenshot();
 
             boolean achouTextoDeErro = solo.waitForText(activity.getString(R.string.erro_senha_incorreta), 1, 5000);
 
@@ -55,6 +57,7 @@ public class TesteLoginActivity
 
             solo.enterText(editEmail, "zezinho@testlandia.com");
             solo.enterText(editSenha, "teste");
+            solo.takeScreenshot();
             solo.clickOnButton("Autenticar");
 
             boolean achouActivity = solo.waitForActivity(UsuarioAutenticadoActivity.class, 5000);
